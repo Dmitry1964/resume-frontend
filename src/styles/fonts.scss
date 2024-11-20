@@ -4,8 +4,8 @@
   font-family: "Oswald";
 
   font-display: swap;
-  src: url("/fonts/Oswald-Regular.woff") format(woff),
-    url("/fonts/Oswald-Regular.woff2") format(woff2);
+  src: url("/fonts/Oswald-Regular.woff") format("woff"),
+    url("/fonts/Oswald-Regular.woff2") format("woff2");
 }
 
 @font-face {
@@ -14,6 +14,6 @@
   font-family: "Oswald";
 
   font-display: swap;
-  src: url("/fonts/Oswald-Bold.woff") format(woff),
-    url("/fonts/Oswald-Bold.woff2") format(woff2);
+  src: url("/fonts/Oswald-Bold.woff") format("woff"),
+    url("/fonts/Oswald-Bold.woff2") format("woff2");
 }
