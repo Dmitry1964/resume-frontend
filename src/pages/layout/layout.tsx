@@ -1,10 +1,10 @@
 import Container from 'src/features/container/container';
-import styles from './layout.module.scss';
+import Header from 'src/features/header/header';
 
 
 const Layout = (): JSX.Element => (
   <Container>
-    <div className={styles.wrapper}>lklkll</div>
+    <Header />
   </Container>
 );
 

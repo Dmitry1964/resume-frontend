@@ -1,4 +1,4 @@
-@import 'src/styles/fonts.scss';
+@use 'src/styles/fonts.scss';
 
 :root {
   font-family: "Oswald", Arial, sans-serif;
@@ -12,6 +12,12 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
 }
 
 a {

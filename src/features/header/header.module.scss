@@ -1,0 +1,63 @@
+@use 'src/styles/variables' as *;
+
+.header {
+display: grid;
+grid-template-columns: 36.5% 1fr;
+}
+
+.header__content {
+  width: 100%;
+}
+
+.header__avatar img {
+  width: 100%;
+}
+
+.header__border {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+  height: 50px;
+  background-color: #ffffff;
+  transform: skew(45deg) translateX(-25px);
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 100%;
+    background-color: $color-black-pearl;
+    right: 0;
+    top: 0;
+    transform: skewX(-45deg) translateX(25px);
+  }
+
+
+}
+
+
+[id="first"] {
+  width: 75%;
+  height: inherit;
+  background-color: $color-black-pearl;
+  border-radius: 5px 0 0 5px;
+  margin-left: 20px;
+  position: relative;
+
+}
+
+[id="second"] {
+  width: 10%;
+  height: inherit;
+  background-color: forestgreen;
+  margin-left: 20px;
+  border-radius: 5px;
+}
+
+[id="third"] {
+  width: 7%;
+  height: inherit;
+  background-color: forestgreen;
+  border-radius: 5px;
+}
