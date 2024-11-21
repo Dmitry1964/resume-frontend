@@ -1,7 +1,7 @@
 import styles from './container.module.scss';
 
 type ContainerProps = {
-  children: JSX.Element;
+  children: React.ReactNode;
 }
 
 const Container = ({children}: ContainerProps) => (

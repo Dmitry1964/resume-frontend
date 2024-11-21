@@ -1,0 +1,23 @@
+@use '/src/styles/variables' as *;
+@use '/src/styles/mixins' as *;
+
+.contact {
+  display: grid;
+  grid-template-columns: auto 1fr;
+
+  & span {
+    font-size: 2rem;
+    color: $color-black-pearl;
+    justify-self: flex-end;
+
+    @include vp-1023 {
+      font-size: 1.6rem;
+    }
+  }
+}
+
+.contact img {
+  @include vp-1023 {
+    width: 6.5rem;
+  }
+}

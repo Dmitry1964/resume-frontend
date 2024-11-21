@@ -1,0 +1,50 @@
+@use '/src/styles/variables.scss' as *;
+
+.skill_item {
+  display: grid;
+  grid-template-columns: 35% 57%;
+  column-gap: 5%;
+
+  & span {
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
+}
+
+.skill_item__level {
+  width: 100%;
+  height: 15px;
+
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: '';
+    width: 15px;
+    height: 15px;
+    top: 0;
+    left: -7.5px;
+    background-color: $color-eastern-blue;
+    z-index: 10;
+  }
+}
+
+.skill_item__track {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 15px;
+  background-color: $color-white-smoke;
+  transform: skew(-45deg);
+}
+
+.skill_item__range {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  background-color: $color-eastern-blue;
+  transform: skew(-45deg);
+
+}
