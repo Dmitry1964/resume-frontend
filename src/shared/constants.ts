@@ -1,4 +1,4 @@
-import { TContactItem, TSkillItem } from "src/types/types";
+import { TContactItem, TExampleItem, TSkillItem } from "src/types/types";
 
 export const userContacts: TContactItem[] = [
   {
@@ -32,7 +32,7 @@ export const userSkills: TSkillItem[] = [
     level: 75,
   },
   {
-    name: 'TypeScript',
+    name: 'JS / TS',
     level: 55,
   },
   {
@@ -53,11 +53,11 @@ export const userSkills: TSkillItem[] = [
 export const userSoftWare: TSkillItem[] = [
   {
     name: 'React',
-    level: 75,
+    level: 70,
   },
   {
     name: 'Redux',
-    level: 75,
+    level: 65,
   },
   {
     name: 'Pug',
@@ -67,4 +67,37 @@ export const userSoftWare: TSkillItem[] = [
     name: 'WebPack',
     level: 65,
   },
+]
+
+export const examples: TExampleItem[] = [
+  {
+    id: 1,
+    img: 'content/camera-shop.jpg',
+    imgModal: 'content/camera-shop-big.jpg',
+    description: '',
+    href: 'https://cameras-shop-nosdm.vercel.app/',
+  },
+  {
+    id: 2,
+    img: 'content/escape-room.jpg',
+    imgModal: 'content/escape-room-big.jpg',
+    description: '',
+    href: 'https://escape-room-sand.vercel.app/',
+  },
+  {
+    id: 3,
+    img: 'content/gidravlika.jpg',
+    imgModal: 'content/gidravlika-big.jpg',
+    description: '',
+    href: 'https://гидравлика-м.рф/',
+  },
+  {
+    id: 4,
+    img: 'content/gidravlika-tech.jpg',
+    imgModal: 'content/gidravlika-tech-big.jpg',
+    description: '',
+    href: 'https://gidravlika-m.tech/',
+  },
+
+
 ]

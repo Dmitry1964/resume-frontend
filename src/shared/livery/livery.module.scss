@@ -1,0 +1,54 @@
+@use '/src/styles/variables.scss' as *;
+
+.livery {
+  width: 100%;
+  height: clamp(3rem, 4vw, 5rem);
+  background-color: $color-eastern-blue;
+  position: relative;
+
+
+  & h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    color: $color-white-smoke;
+    font-size: clamp(2rem, 3vw, 3.2rem);
+    vertical-align: middle;
+    height: clamp(3rem, 4vw, 5rem);
+    font-weight: 500;
+
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    height: inherit;
+    width: 10%;
+    top: 0;
+    right: 0;
+    // background-color: $color-white-smoke;
+  }
+}
+
+.livery__right {
+  position: absolute;
+  height: inherit;
+  width: 20%;
+  top: 0;
+  right: 4%;
+  background-color: $color-white-smoke;
+  transform: skew(-45deg);
+
+  &::after {
+    position: absolute;
+    content: '';
+    height: inherit;
+    width: 40%;
+    top: 0;
+    right: 30%;
+    background-color: $color-light-sea-green;
+    border-radius: 5px;
+    z-index: 10;
+  }
+}
