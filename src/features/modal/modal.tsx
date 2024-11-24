@@ -5,17 +5,21 @@ import Container from '../container/container';
 
 type ModalProps = {
   project: TExampleItem;
+  onCloseBtnClick: () => void;
 }
 
-const Modal = ({ project }: ModalProps) => {
-  const {name, imgModal, href} = project;
+const Modal = ({ project, onCloseBtnClick }: ModalProps) => {
+  const { name, imgModal, href } = project;
   return (
     <section className={styles.modal}>
       <Container>
         <div className={styles.modal__wrapper}>
           <div className={styles.modal__title}>
             <h2>{name}</h2>
-            <button className={styles.modal__close_btn}></button>
+            <button
+            onClick={onCloseBtnClick}
+              className={styles.modal__close_btn}
+            />
           </div>
           <div className={styles.modal__content}>
             <img src={imgModal} alt="" />

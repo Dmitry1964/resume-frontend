@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Modal from '../modal/modal';
 import UserInfo from '../user-info/user-info';
 import WorksExamples from '../works-examples/works-examples';
@@ -27,15 +27,29 @@ const handleExample = (id: number) => {
     imgModal: data?.imgModal || '',
     name: data?.name || ''
   })
-  console.log(data);
   setModal(!modal)
-
 }
+
+const handleCloseButton = () => {
+  setModal(!modal)
+}
+
+useEffect(() => {
+  const closeModal = (evt: {keyCode: number}) => {
+    if (evt.keyCode === 27) {
+      setModal(false)
+    }
+  };
+  window.addEventListener('keydown', closeModal)
+  return () => {
+    window.removeEventListener('keydown', closeModal)
+  }
+}, [])
 
   return (
     <main className={styles.page_main}>
       {modal &&
-      <Modal project={modalData}/>}
+      <Modal project={modalData} onCloseBtnClick={handleCloseButton}/>}
       <UserInfo />
       <section className={styles.page_main__content}>
         <WorksExamples works={examples} onLinkClick={handleExample} />
