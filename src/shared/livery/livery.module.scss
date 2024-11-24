@@ -27,7 +27,6 @@
     width: 10%;
     top: 0;
     right: 0;
-    // background-color: $color-white-smoke;
   }
 }
 
@@ -37,7 +36,7 @@
   width: 20%;
   top: 0;
   right: 4%;
-  background-color: $color-white-smoke;
+  background-color: $color-white-default;
   transform: skew(-45deg);
 
   &::after {

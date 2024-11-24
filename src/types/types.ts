@@ -12,6 +12,7 @@ export type TSkillItem = {
 
 export type TExampleItem = {
   id: number;
+  name: string;
   img: string;
   imgModal: string;
   description: string;

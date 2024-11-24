@@ -1,0 +1,84 @@
+@use '/src/styles//variables.scss' as *;
+
+.modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 25px;
+  background-color: rgba($color: #08192d, $alpha: 0.9);
+  z-index: 1000;
+}
+
+.modal__title {
+display: flex;
+
+  & h2 {
+    color: white;
+    width: 80%;
+    margin: 0 auto 20px;
+    font-size: clamp(2rem, 3vw, 3.2rem);
+
+  }
+}
+
+.modal__close_btn {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  background-color: transparent;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background-color: white;
+    top: 0;
+    left: calc(50% - 1px);
+    transform: rotate(45deg);
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background-color: white;
+    top: 0;
+    left: calc(50% - 1px);
+    transform: rotate(-45deg);
+  }
+}
+
+.modal__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  & img {
+    width: 50%;
+    object-fit: cover;
+    margin-bottom: 30px;
+  }
+
+  & a {
+    font-size: 2rem;
+    color: $color-eastern-blue;
+    display: flex;
+    font-weight: 500;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 50px;
+    background-color: $color-white-default;
+
+    border-radius: 25px;
+    transition: opacity 0.3s;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}

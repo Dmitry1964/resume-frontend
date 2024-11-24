@@ -39,14 +39,14 @@ export const userSkills: TSkillItem[] = [
     name: 'Animation',
     level: 65,
   },
-  {
-    name: 'RegExp',
-    level: 55,
-  },
-  {
-    name: 'Git',
-    level: 50
-  }
+  // {
+  //   name: 'RegExp',
+  //   level: 55,
+  // },
+  // {
+  //   name: 'Git',
+  //   level: 50
+  // }
 
 ]
 
@@ -72,6 +72,7 @@ export const userSoftWare: TSkillItem[] = [
 export const examples: TExampleItem[] = [
   {
     id: 1,
+    name: 'Интернет-магазин ретроспективной фото и видео техникм',
     img: 'content/camera-shop.jpg',
     imgModal: 'content/camera-shop-big.jpg',
     description: '',
@@ -79,6 +80,7 @@ export const examples: TExampleItem[] = [
   },
   {
     id: 2,
+    name: 'Cайт компании, которая занимается проведением игровых квестов разной тематики и уровней сложности.',
     img: 'content/escape-room.jpg',
     imgModal: 'content/escape-room-big.jpg',
     description: '',
@@ -86,6 +88,7 @@ export const examples: TExampleItem[] = [
   },
   {
     id: 3,
+    name: 'Сайт-каталог. Продажа спецтехники марок ЧЕТРА И ВИПО',
     img: 'content/gidravlika.jpg',
     imgModal: 'content/gidravlika-big.jpg',
     description: '',
@@ -93,6 +96,7 @@ export const examples: TExampleItem[] = [
   },
   {
     id: 4,
+    name: 'Лендинг компании, которая занимается ремонтом и сервисом спецтехники',
     img: 'content/gidravlika-tech.jpg',
     imgModal: 'content/gidravlika-tech-big.jpg',
     description: '',

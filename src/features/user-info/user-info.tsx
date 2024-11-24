@@ -6,7 +6,7 @@ import SkillItem from 'src/shared/skill-item/skill-item';
 const UserInfo = (): React.ReactNode => (
   <aside className={styles.user_info}>
     <div className={styles.user_info__contacts}>
-      <h2>CONTAKT</h2>
+      <h2>Contact</h2>
       <ul className={styles.user_info__list}>
         {userContacts.map((item) => (
           <li key={item.contact}>
@@ -16,7 +16,7 @@ const UserInfo = (): React.ReactNode => (
       </ul>
     </div>
     <div className={styles.user_info__skills}>
-      <h2>SKILL</h2>
+      <h2>Skills</h2>
       <ul className={styles.user_info__list}>
         {userSkills.map((item) =>(
           <li key={item.name}>
@@ -26,7 +26,7 @@ const UserInfo = (): React.ReactNode => (
       </ul>
     </div>
     <div className={styles.user_info__software}>
-      <h2>SOFTWARE</h2>
+      <h2>Software</h2>
       <ul className={styles.user_info__list}>
         {userSoftWare.map((item) => (
           <li key={item.name}>

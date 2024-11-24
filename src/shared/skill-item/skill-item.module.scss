@@ -6,7 +6,7 @@
   column-gap: 5%;
 
   & span {
-    font-size: 2rem;
+    font-size: clamp(1.4rem, 2vw, 2rem);
     font-weight: 500;
     line-height: 100%;
   }
