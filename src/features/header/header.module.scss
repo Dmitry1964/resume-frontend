@@ -1,18 +1,34 @@
 @use 'src/styles/variables' as *;
+@use 'src/styles/mixins' as *;
 
 .header {
 display: grid;
 grid-template-columns: 36.5% 1fr;
 background-color: $color-white-smoke;
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+  }
 }
 
 .header__content {
   width: 100%;
+
+  @include vp-767 {
+    width: 300px;
+    margin: 0 auto;
+  }
 }
 
 .header__avatar img {
   width: 100%;
   height: 100%;
+
+  @include vp-767 {
+    display: flex;
+    width: 300px;
+    margin: 0 auto;
+  }
 }
 
 .header__border {
@@ -35,7 +51,9 @@ background-color: $color-white-smoke;
     transform: skewX(-45deg) translateX(25px);
   }
 
-
+  @include vp-767 {
+    display: none;
+  }
 }
 
 

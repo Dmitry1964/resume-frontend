@@ -1,3 +1,5 @@
+@use 'src/styles/mixins' as *;
+
 .works_examples__list {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -6,6 +8,11 @@
   list-style: none;
   margin: 0;
   padding: 15px;
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
 }
 
 .works_examples__item {

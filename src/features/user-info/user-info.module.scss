@@ -1,8 +1,15 @@
 @use 'src/styles/variables' as *;
+@use 'src/styles/mixins' as *;
 
 .user_info {
   background-color: $color-light-sea-green;
   padding: 0 15px 15px;
+
+  @include vp-767 {
+    width: 300px;
+    margin: 0 auto 15px;
+    padding: 0 10px 15px;
+  }
 }
 
 .user_info__contacts,
