@@ -22,7 +22,7 @@ const Modal = ({ project, onCloseBtnClick }: ModalProps) => {
             />
           </div>
           <div className={styles.modal__content}>
-            <img src={imgModal} alt="" />
+            <img src={imgModal} alt="Изображение сайта" />
             <a href={href} target='_blank'>Перейти</a>
           </div>
 
