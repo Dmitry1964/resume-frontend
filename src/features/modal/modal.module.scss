@@ -1,4 +1,5 @@
-@use '/src/styles//variables.scss' as *;
+@use '/src/styles/variables'as *;
+@use 'src/styles/mixins'as *;
 
 .modal {
   position: fixed;
@@ -9,10 +10,14 @@
   padding: 25px;
   background-color: rgba($color: #08192d, $alpha: 0.9);
   z-index: 1000;
+
+  @include vp-767 {
+    padding: 25px 0;
+  }
 }
 
 .modal__title {
-display: flex;
+  display: flex;
 
   & h2 {
     color: white;
@@ -20,6 +25,9 @@ display: flex;
     margin: 0 auto 20px;
     font-size: clamp(2rem, 3vw, 3.2rem);
 
+    @include vp-767 {
+      font-size: 1.8rem;
+    }
   }
 }
 
@@ -61,6 +69,10 @@ display: flex;
     width: 50%;
     object-fit: cover;
     margin-bottom: 30px;
+
+    @include vp-767 {
+      width: 100%;
+    }
   }
 
   & a {

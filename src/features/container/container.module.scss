@@ -10,6 +10,6 @@
   @include vp-767 {
     min-width: 320px;
     padding: 0 clamp(1rem, 3vw, 6rem);
-    background-color: $color-white-smoke;
+    // background-color: $color-white-smoke;
   }
 }
