@@ -6,7 +6,7 @@ type TContactItenProps = {
 }
 
 const ContactItem = ({contact}: TContactItenProps): React.ReactNode => (
-  <a href={contact.type} className={styles.contact}>
+  <a href={contact.type} className={styles.contact} target='_blank'>
     <img src={contact.imgPath} width={80} alt={contact.alt} />
     <span>{contact.contact}</span>
   </a>

@@ -17,7 +17,7 @@ export const userContacts: TContactItem[] = [
     imgPath: 'svg/telegram.svg',
     contact: '@DmitryM_Nos',
     alt: 'Иконка telegram',
-    type: ''
+    type: 'https://t.me/DmitryM_Nos'
   },
 
 ]
